@@ -5061,7 +5061,7 @@ Este gráfico justifica la elección de XGBoost como modelo final ya que ningún
 7           Lasso         Grid Search        1128.31          1136.82       -0.75
 </pre></div>
 </div>
-<img alt="_images/4d6183f104be5ed2c47076c2b5d553ce3b418f732e42dba25d0c977699c14ec7.png" src="_images/4d6183f104be5ed2c47076c2b5d553ce3b418f732e42dba25d0c977699c14ec7.png" />
+<img alt="_images/e42d7281b9f5be6e18bb147d9c33708eb1cab3b94ae8aee326959bfe88df6fc5.png" src="_images/e42d7281b9f5be6e18bb147d9c33708eb1cab3b94ae8aee326959bfe88df6fc5.png" />
 </div>
 </div>
 <p>Cada grupo de barras compara el modelo con hiperparámetros por defecto contra su mejor versión optimizada.
@@ -5121,20 +5121,20 @@ Donde las barras están casi al mismo nivel, el modelo no beneficia mucho de aju
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== RANKING GLOBAL — MEJORES MODELOS OPTIMIZADOS (Test) ===
-           Modelo          Metodo Opt  RMSE Test  MAE Test
-1         XGBoost  Bayesiano (Optuna)     401.46    234.64
-2   Random Forest  Bayesiano (Optuna)     441.24    267.32
-3  Arbol Decision       Random Search     500.21    295.62
-4             KNN       Random Search     813.77    597.79
-5             SVR  Algoritmo Genetico     884.52    599.09
-6           Ridge       Random Search    1129.45    877.09
-7           Lasso         Grid Search    1136.82    885.76
+           Modelo          Metodo Opt  RMSE Test  MAE Test  R2 Test
+1         XGBoost  Bayesiano (Optuna)     401.46    234.64   0.9596
+2   Random Forest  Bayesiano (Optuna)     441.24    267.32   0.9513
+3  Arbol Decision       Random Search     500.21    295.62   0.9373
+4             KNN       Random Search     813.77    597.79   0.8342
+5             SVR  Algoritmo Genetico     884.52    599.09   0.8041
+6           Ridge       Random Search    1129.45    877.09   0.6806
+7           Lasso         Grid Search    1136.82    885.76   0.6764
 
 &gt;&gt;&gt; Mejor modelo final: XGBoost (Bayesiano (Optuna))
     RMSE en Test: 401.4600
 </pre></div>
 </div>
-<img alt="_images/edc598e40eb06194a3de6e989ddc89cb4465393fbf02d3b0c2524d22bca75d4a.png" src="_images/edc598e40eb06194a3de6e989ddc89cb4465393fbf02d3b0c2524d22bca75d4a.png" />
+<img alt="_images/ed49f9723fb902d9dfca43652f16e99b54573b449fe078615cb79cea9987b61c.png" src="_images/ed49f9723fb902d9dfca43652f16e99b54573b449fe078615cb79cea9987b61c.png" />
 </div>
 </div>
 <p>El ranking final en test ordena todos los modelos optimizados de menor a mayor RMSE — XGBoost Bayesiano (Optuna) encabeza la lista.
