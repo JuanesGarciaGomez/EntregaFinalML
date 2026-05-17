@@ -1,0 +1,9 @@
+_build/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.backup*
+checkpoints/
+.claude/
+*.py
+myst.yml
